@@ -9,10 +9,9 @@ app = Flask(__name__)
 @app.route('/<random_string>')
 
 def return_backward_string(random_string):
-    """
-    Returns the input string in reverse order.
-    """
+    # Returns the input string in reverse order.
     return "".join(reversed(random_string)) 
+
 @app.route('/get-mode')
 
 def get_mode():
