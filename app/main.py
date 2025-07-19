@@ -18,8 +18,8 @@ def get_mode():
     """
     Returns the mode of the application.
     """
-    mode = os.environ.get('MODE')
-    return mode
+    raise Exception()
+    return os.environ.get("MODE")
 
 
 if __name__ == '__main__':
