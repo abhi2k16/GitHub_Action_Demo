@@ -19,7 +19,8 @@ def get_mode():
     """
     Returns the mode of the application.
     """
-    mode = os.environ.get('MODE')
+    raise Exception()
+    return os.environ.get('MODE')
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=8080, debug=True)  # Run the Flask app
